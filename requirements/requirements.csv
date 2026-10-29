@@ -1,0 +1,11 @@
+req_id,text,verification
+REQ-CC-001,"If cruise enable switch is off, state shall be OFF from any state.",TC-01
+REQ-CC-002,"If enable switch turns on while OFF, state shall become STANDBY.",TC-02
+REQ-CC-003,"In STANDBY, a SET rising edge with speed >= 30 km/h and brake and clutch released shall activate cruise and latch set speed = current speed (rounded).",TC-03
+REQ-CC-004,"In STANDBY, a SET rising edge with speed < 30 km/h shall be ignored.",TC-04
+REQ-CC-005,"In ACTIVE, brake or clutch applied shall move state to SUSPENDED and retain set speed.",TC-05
+REQ-CC-006,"In SUSPENDED, a RESUME rising edge with speed >= 30 km/h and brake and clutch released shall return to ACTIVE with retained set speed.",TC-06
+REQ-CC-007,"In ACTIVE or SUSPENDED, vehicle speed < 30 km/h shall move state to STANDBY and clear set speed.",TC-07
+REQ-CC-008,"A SET request with speed > 105 km/h shall be ignored (max set speed 105 km/h).",TC-08
+REQ-CC-009,"Set speed output shall be 0 whenever state is OFF or STANDBY.",TC-01;TC-02;TC-04;TC-07
+REQ-CC-010,"Cruise-active output (J1939 SPN 595) shall be 1 only in ACTIVE.",TC-03;TC-05;TC-06

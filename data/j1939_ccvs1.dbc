@@ -1,0 +1,13 @@
+VERSION ""
+NS_ :
+BS_:
+BU_: ECU
+BO_ 2566844672 CCVS1: 8 ECU
+ SG_ WheelBasedVehicleSpeed_SPN84 : 8|16@1+ (0.00390625,0) [0|251] "km/h" Vector__XXX
+ SG_ CruiseControlActive_SPN595 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseControlEnableSwitch_SPN596 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BrakeSwitch_SPN597 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ClutchSwitch_SPN598 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseControlSetSwitch_SPN599 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseControlResumeSwitch_SPN601 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseControlSetSpeed_SPN86 : 40|8@1+ (1,0) [0|250] "km/h" Vector__XXX
