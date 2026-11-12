@@ -33,9 +33,12 @@ These results apply to the supplied scenarios and recorded outputs. They are not
 
 ## System architecture
 
+## System architecture
+
 ![Functional architecture](docs/figures/fig1_functional_architecture.png)
 
 The high-level workflow comprises input conditioning, Stateflow control logic, reference-model generation, MIL/SIL output comparison and offline CAN signal analysis.
+
 
 ## State machine
 
