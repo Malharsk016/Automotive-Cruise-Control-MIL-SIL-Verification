@@ -35,14 +35,14 @@ These results apply to the supplied scenarios and recorded outputs. They are not
 
 ## System architecture
 
-![Functional architecture](docs/figures/fig1_functional_architecture.png)
+![Functional architecture](docs/fig1_functional_architecture.png)
 
 The high-level workflow comprises input conditioning, Stateflow control logic, reference-model generation, MIL/SIL output comparison and offline CAN signal analysis.
 
 
 ## State machine
 
-![Cruise-control state machine](docs/figures/fig2_state_machine.png)
+![Cruise-control state machine](docs/fig2_state_machine.png)
 
 | State | Code | Behavior |
 |---|---:|---|
@@ -63,7 +63,7 @@ The high-level workflow comprises input conditioning, Stateflow control logic, r
 
 ## MIL/SIL verification workflow
 
-![MIL SIL architecture](docs/figures/fig4_mil_sil_architecture.png)
+![MIL SIL architecture](docs/fig4_mil_sil_architecture.png)
 
 The same scenario data is used for the reference and Simulink runs. The comparator checks `state`, `set_speed` and `cc_active` sample by sample.
 
